@@ -1,0 +1,607 @@
+﻿<html>
+<head>
+    <title>INNOVATIA' 17</title>
+    <meta charset="utf-8">
+   <link href='https://fonts.googleapis.com/css?family=Antic Didone' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Arsenal' rel='stylesheet'>
+  <link rel="stylesheet" href="css/events.css">
+    
+<!--Flipper-->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!--Menu-->
+    <link rel="canonical" href="http://www.thepetedesign.com/demos/square_menu_demo.html" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link href='css/menu.css' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="images/Icon.jpg">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="js/jquery.menu.js"></script>
+    
+    <!--footer-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--go to top-->
+     <script src="js/GoTotop.js"></script>
+    
+    <style>
+        body {
+            background-color:black;
+        }
+        
+.info-card {
+    float: left;
+	-webkit-perspective: 600px;
+    -moz-perspective: 600px;
+  -o-perspective: 600px;
+  perspective: 600px;
+
+   
+    margin-top: 5%;
+    margin-left: 5%;
+    
+}
+
+.front, .back {
+	background: #FFF;
+	border-radius: 10px;
+	transition: -webkit-transform 1s;
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+    transform-style: preserve-3d;
+	backface-visibility: hidden;
+    -moz-transform-style: preserve-3d;
+	-moz-backface-visibility: hidden;
+    -o-transform-style: preserve-3d;
+	-o-backface-visibility: hidden;
+	border: 1px solid black;
+    
+        }
+
+.front {
+	overflow: hidden;
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	z-index: 1;
+}
+
+.back {
+	padding: 20px;
+	padding-top: 0px;
+	width: 300px;
+	height: 300px;
+	-webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+	overflow: hidden;
+font-size:18px;
+        }
+
+.info-card:hover .back {
+	-webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    transform: rotateY(0);
+}
+
+.info-card:hover .front {
+	-webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
+.card-image {
+width: 100%;
+height: 100%;
+}
+        .button a:hover{
+          background: inherit;
+        }
+
+
+        .buttonflip a {
+            padding:9px 9px;
+            background-color:#101010;
+            color:white;
+            border:none;
+            font-size:15px;
+        text-align: center;
+    text-decoration: none;
+    display: inline-block;
+   cursor: pointer;
+            margin-left:70px;
+            font-family:'Arsenal';
+            letter-spacing: 2px;
+   
+}
+
+       
+.buttonflip a:hover {
+    background-color: white; 
+    color:#101010;
+   
+    border: 1px solid #101010;
+}
+        
+.fa {
+  padding: 25px;
+  font-size: 30px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 5px;
+
+border-radius:0px;
+    color:white;
+}
+
+.fa:hover {
+    opacity: 0.9;
+    text-decoration:none;
+    color:cornflowerblue;
+}
+
+.fa-facebook:hover {
+  color:#306BF3;
+}
+
+.fa-google:hover {
+  color: #F95244;
+}
+
+
+.fa-instagram:hover {
+  color: #EB44F9;
+  
+}
+        
+              #backtop {
+	        position: fixed;
+            left:auto;right: 20px;top:auto;bottom: 20px;
+	        outline: none;
+            overflow:hidden;
+            color:#fff;
+            text-align:center;
+            background-color:#27CFC3;
+            height:40px;
+            width:40px;
+            line-height:40px;
+            font-size:14px;
+            border-radius:2px;
+            cursor:pointer;
+            transition:all 0.3s linear;
+            z-index:999999;
+
+            opacity:1;
+            display:none;
+        }
+        #backtop:hover {
+            background-color:blue;
+        }
+        #backtop.mcOut {
+            opacity:0;
+        }
+     </style>
+   <script>
+	  $(document).ready( function() {
+	    $(".sidemenu").square_menu();
+	  });
+		
+        
+	</script> 
+    
+    </head>
+    <body>
+        
+        <div class="title">EVENTS
+        <div class="menu">
+  <div class="wrapper">
+	  <div class="main" style="font-family: 'open sans'; letter-spacing:0px;">
+	    
+  	  
+      <div class="pagecontainer">
+        <div class="sidemenu">
+          <nav class="left">
+            <a href="home.html" onhover="disphome()">Home</a>
+            <a href="events.html">Events</a>
+            <a href="#">Sponsors</a>
+            <a href="Aboutus.html">About Us</a>              
+          </nav>
+          <nav class="right">
+            <img src="images/title.png" alt="INNOVATIA LOGO" style="width:420px;height:180px; margin-left:12%;">
+              <div id = "quote" style = "font-size:28px; font-weight:400; text-align :center; color:#3d1313;">Success is how high you bounce after you hit bottom.</div>
+          </nav> 
+          </div> 
+        </div>
+      </div>
+    </div>
+    </div> 
+        </div>
+        
+        <div class="container">
+	<div class="row">		
+    	
+		<div class=" col-sm-4 col-md-4 col-lg-4">
+        <div class="info-card">
+				<div class="front">
+					<img class="card-image" src="images/Bbuzz.jpg">
+				</div>
+			<div class="back">
+				<h2>B-Buzz</h2><hr style="border:1px solid #101010; width:100%;">
+				<p>
+					Group conference is scarce, but group devision is undynamic.
+				</p>
+                <br><br>
+                <div class="buttonflip"><a href="#Event1">Know More</a></div>
+			</div>
+		</div>
+        </div>
+
+		<!-- Scrolling enabled for longer content -->
+		<div class="  col-sm-4 col-md-4 col-lg-4">
+        <div class="info-card">
+				<div class="front">
+					<img class="card-image" src="images/bizztrivia.jpg">
+				</div>
+			<div class="back">
+				<h2>Bizz Trivia</h2><hr style="border:1px solid #101010; width:100%;">
+				<p>
+					Challenge your brain without plagiarizing. Be original.
+			</p><br><br>
+                 <div class="buttonflip"><a href="#Event2">Know More</a></div>
+			</div>
+		</div>
+        </div>
+        
+        <div class="  col-sm-4 col-md-4 col-lg-4">
+        <div class="info-card">
+				<div class="front">
+					<img class="card-image" src="images/madads.jpg">
+				</div>
+			<div class="back">
+				<h2>Mads Ads</h2><hr style="border:1px solid #101010; width:100%;">
+				<p>
+					Use the best gimmicks to advertise the weirdest of products!
+
+			</p><br><br>
+                 <div class="buttonflip"><a href="#Event3">Know More</a></div>
+			</div>
+		</div>
+        </div>
+
+    </div>
+    <hr style="border:1px solid red; width:100%;">
+    <div class="row">
+		<!-- Info Card with social icons -->
+		<div class=" col-sm-4 col-md-4 col-lg-4">
+        <div class="info-card">
+				<div class="front">
+					<img class="card-image" src="images/preview.jpg">
+				</div>
+			<div class="back">
+				<h2>Internship Fair</h2><hr style="border:1px solid #101010; width:100%;">
+				<p>
+					Behold the turtle, he makes progress only when he sticks his neck out.
+				</p><br><br>
+                 <div class="buttonflip"><a href="#Event4">Know More</a></div>
+			</div>
+		</div>
+        </div>
+
+		<!-- Scrolling enabled for longer content -->
+		<div class="  col-sm-4 col-md-4 col-lg-4">
+        <div class="info-card">
+				<div class="front">
+					<img class="card-image" src="images/stockhedge.jpg">
+				</div>
+			<div class="back">
+				<h2>Stock Hedge</h2><hr style="border:1px solid #101010; width:100%;">
+				<p>
+					No estimate is too prostate for a bear or too lofty for a bull.
+
+			</p><br><br>
+                 <div class="buttonflip"><a href="#Event5">Know More</a></div>
+			</div>
+		</div>
+        </div>
+        
+        <div class="  col-sm-4 col-md-4 col-lg-4">
+        <div class="info-card">
+				<div class="front">
+					<img class="card-image" src="images/codiction.jpg">
+				</div>
+			<div class="back">
+				<h2>Codiction</h2><hr style="border:1px solid #101010; width:100%;">
+				<p>
+					Solve problems, digging at the roots not, the greener leaves.
+			</p><br><br>
+                 <div class="buttonflip"><a href="#Event6">Know More</a></div>			</div>
+		</div>
+        </div>
+        
+        
+    </div>
+    <hr style="border:1px solid red; width:100%;">
+  
+                <div class="row">
+		<!-- Info Card with social icons -->
+		<div class="col-sm-offset-2 col-md-offset-2 col-lg-offset-2 col-sm-4 col-md-4 col-lg-4">
+        <div class="info-card">
+				<div class="front">
+					<img class="card-image" src="images/texhovia.png">
+				</div>
+			<div class="back">
+				<h2>Texhovia</h2><hr style="border:1px solid #101010; width:100%;">
+				<p>
+					Innovatia distinguishes between a leader and a follower.
+				</p><br><br>
+                 <div class="buttonflip"><a href="#Event7">Know More</a></div>
+			</div>
+		</div>
+        </div>
+            
+             <div class="col-sm-4 col-md-4 col-lg-4">
+        <div class="info-card">
+				<div class="front">
+					<img class="card-image" src="images/illuminate.jpg">
+				</div>
+			<div class="back">
+				<h2>Workshop</h2><hr style="border:1px solid #101010; width:100%;">
+				<p>
+					A workshop on 'Entrepreneurship and Business Model Competition' 
+			</p><br><br>
+                 <div class="buttonflip"><a href="#Event8">Know More</a></div>			</div>
+		</div>
+        </div>
+        
+</div>  <hr style="border:1px solid red; width:100%;">      <div id="backtop">&#9650;</div>
+    
+       
+        
+    <div class="box1" id="Event1" style="border-left:5px solid #0d4781;"><h1 style="letter-spacing:5px; font-family:'Antic Didone'; font-weight:bold; color:white;"> B-BUZZ</h1>
+      <hr style=" align:center;  width:150px; margin-left: auto; margin-right: auto; border-width: 2px; border-color:#e50000; ">
+       <p style="text-align: left; margin-left:20px; color:beige; font-family:'Arsenal'; font-size:20px;">
+            Group conference is scarce, but Group devision is undynamic so let the zeal flow within you be the fuel and debate on your ideas or views, if you feel you got that urge to tackle every aspect of the today Modern Business Trends? Tune in with the band and see if you got it.<br><br>
+
+            Team Distribution -<br>
+            Group Formation with a best speaker chosen from each group.<br><br>
+
+            Rules and Regulations -<br>
+
+            •	Two Rounds in total.<br>
+            •	Discuss and put up your ideas/ thoughts on that particular topic.<br>
+            •	Time Limit :  15 minutes. NO EXTENSIONS.<br>
+            •	The best speaker that wins the first round, would be eligible for the next level.<br>
+
+            Implement your own innovative idea,
+            Stand out of the crowd with your SUCCESS.<br><br>
+
+            FEES : Rs. 50/- only PER TEAM.<br><br>
+
+            CONTACT -
+
+            Vaishnav : 7709183233
+
+
+      </p>
+        <!--<button class="button"><a href="http://www.meraevents.com/event/innovatia-2017" style="color:inherit;">Register Now!</a></button>-->
+        <input type="button" class="button" value="Register Now" onclick="window.location.href='http://www.meraevents.com/event/innovatia-2017'">
+        </div>
+
+    
+        <div class="box1" id="Event2" style="border-left:5px solid #880e4f;"><h1 style=" letter-spacing:5px; font-family:'Antic Didone';  font-weight:bold; color:white;"> BIZZ TRIVIA</h1>
+        <hr style=" align:center;  width:150px; margin-left: auto; margin-right: auto; border-width: 2px; border-color:#e50000; ">
+        <p style="text-align: left; margin-left:20px; color:beige; font-family:'Arsenal'; font-size:20px;">
+        It is a competition that takes place when two intellectual minds challenge one another by testing their IQ, abilities and skills to identify how much they can invest without plagarizing.<br><br>
+
+Team Distribution -<br>
+An individual or Maximum 2 members are welcome to participate.<br>
+
+Note : It can be an individual or a Team of 2 Members.<br><br>
+
+
+Rules and Regulations -<br>
+
+First Round -<br>
+•	Biz-Trivia I.<br>
+•	Pen-Paper System.<br>
+•	For every correct answer the points shall increase sequencially by 1,3,5,7 and unless a wrong answer appears, points would drastically reduce to ZERO.<br>
+•	Time Limit : 40 minutes. <br>
+•	Advantage – A piece of 7*7 cm paper is allowed where the person is free to write anything, if exceeds the condition then it’s NOT ALLOWED.<br>
+
+Second Round-<br>
+•	Biz-Trivia II for those who qualified Biz-Trivia I.<br>
+•	8-10 teams would make it to Biz-Triva II.<br>
+•	Buzzer System.<br>
+•	Questions would be displayed on the screen where a time limit shall be provided, if in case the team fails to answer the question shall be passed onto the next team.<br>
+•	At the end of 2nd round, there would be a FINAL ROUND : RAPID FIRE.
+In any case of tie in either of the rounds, the teams would have another round, where the final judgement shall me made.<br>
+
+Speak up your mind,
+And boost your knowledge.<br><br>
+
+FEES : Rs. 100/- only PER TEAM.<br><br>
+
+CONTACT -
+
+Maheshwari : 8149693284
+
+</p><input type="button" class="button" value="Register Now" onclick="window.location.href='http://www.meraevents.com/event/innovatia-2017'">
+        </div>
+        
+        <div class="box1" id="Event3" style="border-left:5px solid #4520a7;"><h1 style=" letter-spacing:5px;font-family:'Antic Didone'; font-weight:bold; color:white;"> MAD ADS</h1>
+        <hr style=" align:center;  width:150px; margin-left: auto; margin-right: auto; border-width: 2px; border-color:#e50000; ">
+        <p style="text-align: left; margin-left:20px; color:beige; font-family:'Arsenal'; font-size:20px;">
+        Creativity with strategy is called advertisement and does not circulate information to focus how to be social and not how to do social in the business. It is a event where one has to create their and sell their maddest and craziest advertisement without drawing attention to oneself while knowing what you are doing but no one else does.<br><br>
+
+Team Distribution -<br>
+Solo Participation ONLY.<br><br>
+
+Rules and Regulations -<br>
+
+•	Product and required material shall be provided to you.<br>
+•	Time Limit :  20 minutes.<br>
+•	You need to create a mad and crazy advertisement regarding that product in the given time limit. NO EXTENSIONS.<br>
+
+Weave your own inevitable magic,
+Make it worth a sight.<br><br>
+
+FEES : Rs. 50/- only PER TEAM.<br><br>
+
+CONTACT -
+
+Vaishnav : 7709183233
+</p><input type="button" class="button" value="Register Now" onclick="window.location.href='http://www.meraevents.com/event/innovatia-2017'">
+        </div>
+        
+        <div class="box1" id="Event4" style="border-left:5px solid #ff8f00;"><h1 style=" letter-spacing:5px; font-family:'Antic Didone'; font-weight:bold;color:white;"> INTERNSHIP FAIR</h1>
+        <hr style=" align:center;  width:150px; margin-left: auto; margin-right: auto; border-width: 2px; border-color:#e50000; ">
+        <p style="text-align: left; margin-left:20px; color:beige; font-family:'Arsenal'; font-size:20px;">
+        Ever faced fear of how you have to challenge real-time job? Felt insecure of knowing what and how you have to address the things/people in your future office? Any doubts in doing your field of interests?<br>
+          Well, the answer to all your thoughts and feelings is
+- PURSUE AN INTERNSHIP<br>
+A beginner always creates his footprints in the sand to mark is way to SUCCESS to become an EXPERT by empowering others and proving onself in the realms of the industry.<br>
+
+So, wake up and come with full ENTHUSIASM to catch your chance of experincing in your dream company.<br><br>
+
+Rules and Regulations -<br>
+
+•	Identity Proof carry is neccessary to carry in case.<br>
+•	Keep any sample work or any certification in some course, in case it is asked for.<br><br>
+
+THIS INTERNSHIP FAIR IS OPEN TO ALL DOMAINS AND NOT ONLY TECHNICAL.<br>
+
+Do what you can today and not tommorow,
+Stand Out and be Unique.<br><br>
+
+CONTACT -<br>
+
+Hari : 8390296868
+
+</p><input type="button" class="button" value="Register Now" onclick="window.location.href='http://www.meraevents.com/event/innovatia-2017'">
+        </div>
+        
+        <div class="box1" id="Event5" style="border-left:5px solid #795548;"><h1 style=" letter-spacing:5px; font-family:'Antic Didone'; font-weight:bold; color:white;"> STOCK HEDGE</h1>
+        <hr style=" align:center;  width:150px; margin-left: auto; margin-right: auto; border-width: 2px; border-color:#e50000; ">
+        <p style="text-align: left; margin-left:20px; color:beige; font-family:'Arsenal'; font-size:20px;">
+        We have this culture of financialization where we need to invest in stock market which would help us learn the aspects of economy. Anyone with a retirement or pension is an investor in the stock market.<br><br>
+
+Team Distribution -<br>
+Individual Person<br><br>
+
+Rules and Regulations -<br>
+
+•	Based on Virtual Stock Market stimulator.<br>
+•	Usage of Internet or any Software.<br>
+•	Login/Username shall be provided to the participant.<br>
+•	Dynamic platform.<br>
+•	Tutorial shall be shown on how to use the interface.<br>
+•	Winner shall be decided on the basis of the highest capital at the end of the event.<br>
+
+It is not about the bull or the bear side,
+But about the RIGHT SIDE.<br><br>
+
+FEES : Rs. 50/- only PER TEAM.<br><br>
+
+CONTACT -<br>
+
+Satvik : 9970437443
+
+</p><input type="button" class="button" value="Register Now" onclick="window.location.href='http://www.meraevents.com/event/innovatia-2017'">
+        </div>
+        
+        <div class="box1" id="Event6" style="border-left:5px solid #ff5722;"><h1 style=" letter-spacing:5px; font-family:'Antic Didone'; font-weight:bold; color:white;"> CODICTION</h1>
+        <hr style=" align:center;  width:150px; margin-left: auto; margin-right: auto; border-width: 2px; border-color:#e50000; ">
+        <p style="text-align: left; margin-left:20px; color:beige; font-family:'Arsenal'; font-size:20px;">
+      Codiction is a crypting environment, where the participants get to their Alpha mode by upgrading their small business management by cracking at the root of the codes, and investing in oneself their coding skills and talents.<br><br>
+
+Team Distribution -<br>
+
+1. FE-SE (Junior Team)<br>
+2. SE-BE (Senior Team)<br>
+Note : It can be an individual or a Team of 2 Members.<br><br>
+
+Rules and Regulations -<br>
+
+•	The maximum time donation to both the groups, FE-SE and TE-BE will be Half an hour in the first round and in the second round for those who qualify will be 2 hours.<br>
+•	The permissible languages are C and C++ ONLY.<br>
+•	The first round would be MCQ BASED, whereas if you qualify to the second round, it will be a clash of PURE CODING.<br>
+•	Use of IDE is prohibited in the First Round ONLY.<br>
+
+Cast your void code into build,
+May the creativity be with you.<br><br>
+
+FEES : Rs. 100/- only PER TEAM(JUNIORS/SENIORS).<br><br>
+CONTACT -
+
+Satvik : 9970437443
+
+</p><input type="button" class="button" value="Register Now" onclick="window.location.href='http://www.meraevents.com/event/innovatia-2017'">
+  </div>
+        <div class="box1" id="Event7" style="border-left:5px solid red;"><h1 style=" letter-spacing:5px; font-family:'Antic Didone'; font-weight:bold; color:white;"> TEXHOVIA</h1>
+        <hr style=" align:center;  width:150px; margin-left: auto; margin-right: auto; border-width: 2px; border-color:#e50000; ">
+        <p style="text-align: left; margin-left:20px; color:beige; font-family:'Arsenal'; font-size:20px;">
+      The pitch of fleshing out the concepts to someone with the potential to demonstrate that the spirit of scope of an idea is matched with the specifics to create your own platform in a creative and economic environment where coming up with good ideas are hard enough, but convincing them it would work is even harder.<br><br>
+
+Team Distribution -<br>
+Can be a selection of 3-4 or more people maximum.<br><br>
+
+Rules and Regulations -<br>
+
+•	Ideas can be technical, social or business related.<br>
+•	Time Limit : Each contestant will have 2 minutes to pitch their idea for questions and answers utpo 5 minutes.<br>
+•	Judgement : On basis of originality, creativity and viability as well as ability of the interview.<br>
+
+Demonstrate your message to hit your cloud,
+But inspire others to see your cloud for themselves.<br><br>
+
+FEES : Rs. 150/- only PER TEAM.<br><br>
+
+CONTACT -<br>
+
+Maheshwari : 8149693284<br>
+Hari : 8390296868
+</p><input type="button" class="button" value="Register Now" onclick="window.location.href='http://www.meraevents.com/event/innovatia-2017'">
+        </div>
+        <div class="box1" id="Event8" style="border-left:5px solid green;"><h1 style=" letter-spacing:5px; font-family:'Antic Didone'; font-weight:bold; color:white;"> WORKSHOP</h1>
+        <hr style=" align:center;  width:150px; margin-left: auto; margin-right: auto; border-width: 2px; border-color:#e50000; ">
+        <p style="text-align: left; margin-left:20px; color:beige; font-family:'Arsenal'; font-size:20px;">
+      The Entrepreneurship Cell IIT Bombay, which has grown to become India’s largest entrepreunership promoting organisation which caters a large audience and aims at manifesting the latent entrepreneurial spirit of the young ones.<br>
+
+So, IIT Bombay is looking forward to associate with P.I.C.T, Pune by conducting an ILLUMINATE WORKSHOP in our college premises. Given underleaf is an overview about this workshop.<br><br>
+
+ILLUMINATE 2017 is a series of preEureka! Which is a one-day workshop on “Entrepreneurship and Business Model Competition” which would precede E-Cell, IIT Bombay’s flagship competition “Eureka”! And has been acclaimed as “Asia’s largest Business Model Competition” in 2010 by Thomson Reuters.<br>
+
+It will be conducted during our event “INNOVATIA-2017” on 9th Sepetember to 10th September, 2017 for the students enthusiatic to learn about Entrepreunership and the business strategies.<br><br>
+
+FEES : 650/- only per individual.<br><br>
+
+Contact -<br>
+
+Satvik : 9970437443
+
+            </p><input type="button" class="button" value="Register Now" onclick="window.location.href='http://www.meraevents.com/event/innovatia-2017'">
+            </div></div>
+     <br>
+        <div class="foot row">
+           <div class="col-md-5">            
+              <img src="images/edclogo.jpg" alt="edc logo" style="width:280px;height:170px;">
+           </div>
+          <div class="col-md-4"><br><br>   
+                <a href="https://www.facebook.com/PICTEDC/" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-google"></a>
+              <a href="https://www.instagram.com/edcell_pict2017/" class="fa fa-instagram"></a>
+            </div>
+          <div class="col-md-3">
+            <img src="images/title.png" alt="INNOVATIA LOGO" style="width:280px;height:170px;">
+          </div>
+        </div>
+        
+        <br>
+           
+
+         </body></html>

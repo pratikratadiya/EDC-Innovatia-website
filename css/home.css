@@ -1,0 +1,185 @@
+
+@media only screen and (max-width:850px ) {
+   img {
+    width: 70%;
+    }
+    #demo {
+        margin-left:0px;
+    }
+}
+
+.innovatia {
+    background-color: yellowgreen;
+    width:100%;
+    height:120px;
+    position:relative;
+    
+    
+}
+.innovatia:after {
+    position:absolute;
+    content:'';
+     bottom: 0;
+     left: 0;
+    right: 0; 
+    right:0;
+    width:100%;
+    height:100%;
+    background:inherit;
+    transform-origin: top left;
+    transform:skewY(5deg);
+    z-index: -1;
+    
+}
+.main-container {
+    margin-top:7%;
+    
+}
+.content-container {
+ font-weight: 300;
+  font-size: 25px;
+  color: #fff;
+  z-index: 1;
+}
+span {
+  font-size: 32px;
+  text-shadow: -2px 2px 2px rgba(0,0,0,0.75);
+}
+hr {
+  width: 100px;
+  border: 2px solid #fff;
+}
+
+.slanted-div {
+  background-image: url("C:/Users/Dhwani/Desktop/edc_website/OUR EDC WEB/FALLEN/images/triangles.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+    background-position: center;    
+  width: 100%;
+  margin: 0;
+height:320px;
+  position: relative;
+  z-index: 1;
+    background-repeat:no-repeat;
+}
+
+.slanted-div:before {
+  background: inherit;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  height: 100%;
+  position: absolute;
+  transform: skewY(-5deg);
+  transform-origin: 100%;
+  z-index: -1;
+}
+
+.slanted-div:after {
+  background: inherit;
+  top: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  height: 100%;
+  position: absolute;
+  transform: skewY(5deg);
+  transform-origin: 100%;
+  z-index: -1;
+}
+
+.d {
+  position: relative;
+    background: url(https://wallpaperscraft.com/image/processor_cpu_upgrade_installation_chip_robot_5633_1920x1080.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: round;
+    height:420px;
+}
+
+.d:before {
+    position:absolute;
+    content:'';
+     bottom: 0;
+     left: 0;
+    right: 0; 
+    top:0;
+    background:inherit;
+    transform-origin: 0;
+    height:100%;
+}
+.d:after {
+    position:absolute;
+    content:'';
+     bottom: 0;
+     left: 0;
+    right: 0; 
+    top:0;
+    background:inherit;
+    transform-origin: 0;
+    transform: skewY(5deg);
+    height: 100%;
+}
+
+
+.slanted-div2 {
+  background: firebrick;
+  width: 100%;
+  margin: 0;
+  padding: 25px;
+  position: relative;
+  z-index: 1;
+}
+
+.slanted-div2:before {
+  background: inherit;
+  top: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  height: 100%;
+  position: absolute;
+  transform: skewY(-5deg);
+  transform-origin: 0;
+  z-index: 0;
+}
+
+.slanted-div2:after {
+  background: inherit;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  height: 100%;
+  position: absolute;
+  transform: skewY(5deg);
+  transform-origin: 0;
+  z-index: -1;
+}
+
+.slanted-div3 {
+  background-color: darkorange;
+  width: 100%;
+  margin: 0;
+  padding: 25px;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.slanted-div3:after {
+  background: inherit;
+  top: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  height: 100%;
+  position: absolute;
+  transform: skewY(5deg);
+  transform-origin: 100%;
+  z-index: -1;
+}
+
